@@ -1,0 +1,29 @@
+﻿@model IEnumerable<SmartSwitchDashboard.Models.SmartSwitch>
+@{
+    ViewData["Title"] = "Smart Switches";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<nav class="navbar navbar-inverse bg-inverse">
+    <span class="navbar-text">
+        <strong>Smart Sensors </strong>
+    </span>
+</nav>
+
+<div class="card-deck">
+@foreach (var item in Model)
+{
+    <div id="WindowPartial">
+        @Html.Partial("Partial.cshtml", item)
+    </div>
+}
+</div>
+
+
+
+
+
+
+
+
+

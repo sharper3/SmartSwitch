@@ -1,0 +1,9 @@
+c:\users\sharper\documents\visual studio 2017\Projects\SmartSwitchDashboard\SmartSwitchDashboard\bin\Release\netcoreapp1.1\SmartSwitchDashboard.deps.json
+c:\users\sharper\documents\visual studio 2017\Projects\SmartSwitchDashboard\SmartSwitchDashboard\bin\Release\netcoreapp1.1\SmartSwitchDashboard.runtimeconfig.json
+c:\users\sharper\documents\visual studio 2017\Projects\SmartSwitchDashboard\SmartSwitchDashboard\bin\Release\netcoreapp1.1\SmartSwitchDashboard.runtimeconfig.dev.json
+c:\users\sharper\documents\visual studio 2017\Projects\SmartSwitchDashboard\SmartSwitchDashboard\bin\Release\netcoreapp1.1\SmartSwitchDashboard.dll
+c:\users\sharper\documents\visual studio 2017\Projects\SmartSwitchDashboard\SmartSwitchDashboard\bin\Release\netcoreapp1.1\SmartSwitchDashboard.pdb
+c:\users\sharper\documents\visual studio 2017\Projects\SmartSwitchDashboard\SmartSwitchDashboard\obj\Release\netcoreapp1.1\SmartSwitchDashboard.csprojResolveAssemblyReference.cache
+c:\users\sharper\documents\visual studio 2017\Projects\SmartSwitchDashboard\SmartSwitchDashboard\obj\Release\netcoreapp1.1\SmartSwitchDashboard.AssemblyInfo.cs
+c:\users\sharper\documents\visual studio 2017\Projects\SmartSwitchDashboard\SmartSwitchDashboard\obj\Release\netcoreapp1.1\SmartSwitchDashboard.dll
+c:\users\sharper\documents\visual studio 2017\Projects\SmartSwitchDashboard\SmartSwitchDashboard\obj\Release\netcoreapp1.1\SmartSwitchDashboard.pdb

@@ -1,0 +1,55 @@
+﻿@model SmartSwitchDashboard.Models.SmartSwitch
+@{ 
+
+}
+
+<div class="card card-outline-secondary mb-3 text-center" style="min-width:285px; max-width:285px">
+    <nav class="navbar">
+        <span class="navbar-text">
+            <strong>@Model.Id</strong>
+        </span>
+    </nav>
+
+    <div class="row">
+        <div class="col">
+            <p><strong>Relay 1</strong></p>
+            <p><strong>Relay 2</strong></p>
+  
+        </div>
+        <div class="col">
+            <p id="r1">@Model.RelayOneClosed</p>
+            <p id="r2">@Model.RelayTwoClosed</p>
+         
+        </div>
+    </div>
+    <form asp-controller="Home" asp-action="ToggleRelayOne" asp-route-id="@Model.Id">
+        <input class="btn btn-success " style="background-color:dimgray; border-color:dimgray; margin:10px" type="submit" value="Toggle R1" />
+    </form>
+    <form asp-controller="Home" asp-action="ToggleRelayTwo" asp-route-id="@Model.Id">
+        <input class="btn btn-success " style="background-color:dimgray; border-color:dimgray; margin:10px" type="submit" value="Toggle R2" />
+    </form>
+
+    <div class="card-footer center-block" style="font-size:12px" id="lastseen">Last Updated: @Model.LastSeen.ToLocalTime()</div>
+
+    
+</div>
+
+<script>
+    $(function () {
+
+        setInterval(function () {
+
+            jQuery.get("http://codepalousasmartswitch.azurewebsites.net/api/smartswitch/@Model.Id", function (response) {
+                console.log(response);
+               
+                $('#r1').html(response['relayOneClosed']);
+                $('#r2').html(response['relayTwoClosed']);
+                $('#lastseen').html("Last Updated: " + moment(response['lastSeen']).format('M/DD/YYYY h:mm:ss a'));
+            });
+
+
+        }, 5000);
+
+    });
+
+</script>
